@@ -2,15 +2,39 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
     .box {
         width: 100%;
-        max-width: 892px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 52px 0 20px;
+    }
+    .heading {
+        font-size: ${({ theme }) => theme.fontSize.xxxl};
+        font-weight: 600;
+        font-family: "Rubik";
+        color: ${({ theme }) => theme.color.text_1};
+
+        position: relative;
+    }
+    .heading::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 5px;
+        bottom: -10px;
+
+        border-radius: 4px;
+        width: 28px;
+        background-color: ${({ theme }) => theme.color.primary};
+        left: 0px;
+        right: 0px;
     }
     .header {
         display: flex;
         color: ${({ theme }) => theme.color.text_1};
         font-size: ${({ theme }) => theme.fontSize.sm};
-        justify-content: flex-end;
+        justify-content: space-between;
+        .right {
+            display: flex;
+        }
 
         .center {
             margin: auto 10px;

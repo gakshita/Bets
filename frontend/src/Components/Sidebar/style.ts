@@ -8,6 +8,10 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.color.primary};
         font-weight: 600;
         font-size: ${({ theme }) => theme.fontSize.md};
+        img {
+            width: 60px;
+            margin-top: 20px;
+        }
     }
     .tabs {
         margin-top: 80px;

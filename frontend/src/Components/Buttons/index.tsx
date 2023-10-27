@@ -12,6 +12,7 @@ const Button: React.FC = ({
     const theme = useTheme();
     return (
         <ButtonStyle
+            className={`${disabled && "custom-disabled"}`}
             width={width}
             fontSize={theme.fontSize[fontSize]}
             height={height}

@@ -9,7 +9,9 @@ import {
 const Sidebar: React.FC = () => {
     return (
         <Container>
-            <div className="logo">Logo</div>
+            <div className="logo">
+                <img src="./public/Bets.png"></img>
+            </div>
             <div className="tabs">
                 <div className="tab">
                     <FontAwesomeIcon icon={faDiceTwo} size="xl" />{" "}

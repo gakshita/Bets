@@ -1,13 +1,13 @@
 import styled, { css } from "styled-components";
 export const Container = styled.div`
     width: 100%;
-    max-width: 892px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 30px 0 20px;
     color: ${({ theme }) => theme.color.text_1};
 
     .top-section {
-        margin-bottom: 100px;
+        margin: 50px 100px 100px;
     }
     .coin {
         img {
@@ -118,7 +118,7 @@ export const Box2 = styled.div`
     }
     .disabled {
         color: ${({ theme }) => theme.color.text_2};
-        cursor: not-allowed;
+        pointer-events: none;
     }
     .error {
         color: ${({ theme }) => theme.color.text_2};

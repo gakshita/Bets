@@ -26,3 +26,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
+.custom-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

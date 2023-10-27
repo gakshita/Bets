@@ -11,7 +11,10 @@ const darktheme = {
     background_6: "#242632",
     indicator: "#FFCC00",
     text_1: "#fff",
-    text_2: "#7f8083"
+    text_2: "#7f8083",
+    text_3: "#5469dd",
+    text_4: "#8F8F92",
+    green: "#3DB35C"
 };
 
 const lightTheme = {
