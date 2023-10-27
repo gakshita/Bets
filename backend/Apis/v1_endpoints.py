@@ -7,14 +7,11 @@ from typing import Awaitable, Callable, List, Optional, TypeVar, Union
 import redis.asyncio as redis
 
 
-from contract import to_checksum
 from fastapi import APIRouter, Depends, FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi_cache.backends.redis import RedisBackend
 
-from interface import MarketPayoutPair
 from lib.settings import settings
-from models import OptionData_Pydantic
 from pydantic import BaseModel, Field, NonNegativeInt, PositiveInt
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
