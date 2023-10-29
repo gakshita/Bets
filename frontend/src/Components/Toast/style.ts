@@ -20,6 +20,7 @@ to{
 export const Container = styled.div`
     position: absolute;
     right: 0;
+    top: 20px;
     // transition: all 1.5s linear;
     .fade-in {
         animation: ${fadeIn} 500ms ease;
