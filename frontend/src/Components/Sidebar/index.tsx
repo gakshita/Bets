@@ -27,8 +27,8 @@ const Sidebar: React.FC = () => {
                 </div>
                 <div
                     className={`tab ${
-                        loc.pathname == "/coin-flip" ||
-                        (loc.pathname == "/" && "selected")
+                        (loc.pathname == "/coin-flip" || loc.pathname == "/") &&
+                        "selected"
                     }`}
                     onClick={() => navigate("coin-flip")}
                 >
