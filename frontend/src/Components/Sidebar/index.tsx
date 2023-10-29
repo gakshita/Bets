@@ -20,7 +20,7 @@ const Sidebar: React.FC = () => {
                     className={`tab ${
                         loc.pathname == "/mega-dice" && "selected"
                     }`}
-                    onClick={() => navigate("mega-dice")}
+                    onClick={() => navigate("/mega-dice")}
                 >
                     <FontAwesomeIcon icon={faDiceTwo} size="xl" />{" "}
                     <span className="txt">Mega Dice</span>
@@ -30,7 +30,7 @@ const Sidebar: React.FC = () => {
                         (loc.pathname == "/coin-flip" || loc.pathname == "/") &&
                         "selected"
                     }`}
-                    onClick={() => navigate("coin-flip")}
+                    onClick={() => navigate("/coin-flip")}
                 >
                     <FontAwesomeIcon icon={faCoins} size="xl" />{" "}
                     <span className="txt">Coin Flip</span>

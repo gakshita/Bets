@@ -8,19 +8,14 @@ function App() {
     const [currentTheme, setCurrentTheme] = useState("dark");
 
     return (
-        <Router>
-            <Routes>
-                <Route
-                    path="/"
-                    element={<Layout currentTheme={currentTheme} />}
-                >
-                    <Route path="coin-flip" element={<CoinFlip />} />
-                    <Route path="mega-dice" element={<MegaDice />} />
+        <Routes>
+            <Route path="/" element={<Layout currentTheme={currentTheme} />}>
+                <Route path="coin-flip" element={<CoinFlip />} />
+                <Route path="mega-dice" element={<MegaDice />} />
 
-                    <Route index element={<CoinFlip />} />
-                </Route>
-            </Routes>
-        </Router>
+                <Route index element={<CoinFlip />} />
+            </Route>
+        </Routes>
     );
 }
 
