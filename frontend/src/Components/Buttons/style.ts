@@ -1,8 +1,7 @@
 import styled, { css } from "styled-components";
 
-export const ButtonStyle = styled.div`
+export const ButtonStyle = styled.button<ButtonProps>`
     background: ${({ theme }) => theme.color.primary};
-
     display: flex;
     position: relative;
     font-family: "Rubik";
@@ -19,3 +18,9 @@ export const ButtonStyle = styled.div`
     height: ${(props) => props.height};
     align-items: center;
 `;
+
+interface ButtonProps {
+    width?: string;
+    height?: string;
+    fontSize?: string;
+}

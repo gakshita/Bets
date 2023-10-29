@@ -32,6 +32,7 @@ const defaultTheme = {
         sm: "14px",
         md: "16px",
         lg: "18px",
+        xxl: "20px",
         xxxl: "24px"
     },
     borderRadius: {

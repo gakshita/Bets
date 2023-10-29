@@ -3,18 +3,22 @@ import Button from "../Buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRotateRight } from "@fortawesome/free-solid-svg-icons";
 import { useTokens } from "src/context/GlobalContext";
-import { useToast } from "src/context/Toast";
-import { SuccessToast, FailureToast } from "src/Components/Toast";
 
+import { useLocation } from "react-router-dom";
 const Navbar: React.FC = () => {
-    const { tokens, refill_tokens, set_tokens } = useTokens();
-    const { showToast } = useToast();
+    const location = useLocation();
 
+    const { tokens, refill_tokens, set_tokens } = useTokens();
+
+    const getHeading = () => {
+        const heading = location.pathname.slice(1).split("-");
+        return `${heading[0]} ${heading[1]}`;
+    };
     return (
         <Container>
             <div className="box">
                 <div className="header">
-                    <div className="heading">Coin Flip</div>
+                    <div className="heading">{getHeading()}</div>
                     <div className="right">
                         <FontAwesomeIcon
                             icon={faArrowRotateRight}
@@ -25,7 +29,7 @@ const Navbar: React.FC = () => {
                             <img src="/token.png" alt="" />
                             <span>{tokens.toFixed(2)} DEMO</span>
                         </div>
-                        <Button text="Connect"></Button>
+                        <Button text="Connect" func={() => {}}></Button>
                     </div>
                 </div>
             </div>

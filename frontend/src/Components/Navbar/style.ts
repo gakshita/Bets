@@ -13,6 +13,7 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.color.text_1};
 
         position: relative;
+        text-transform: capitalize;
     }
     .heading::after {
         content: "";

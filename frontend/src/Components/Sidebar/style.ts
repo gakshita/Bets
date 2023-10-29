@@ -34,5 +34,8 @@ export const Container = styled.div`
         .tab:hover {
             color: ${({ theme }) => theme.color.text_1};
         }
+        .selected {
+            color: ${({ theme }) => theme.color.text_1};
+        }
     }
 `;

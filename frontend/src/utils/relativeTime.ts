@@ -1,5 +1,5 @@
 export function timeDifference(previous: number) {
-    let current = new Date();
+    let current = new Date().getTime();
 
     var msPerMinute = 60 * 1000;
     var msPerHour = msPerMinute * 60;
