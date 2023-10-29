@@ -12,7 +12,7 @@ const MegaDice: React.FC = () => {
         <Container>
             <GreyBox>
                 <div className="coming-soon ">
-                    <img src="public/wipp.svg" alt="" />
+                    <img src="/wipp.svg" alt="" />
 
                     <div className="heading">
                         Cool stuff comig your way soon. <br /> Stay tuned!
