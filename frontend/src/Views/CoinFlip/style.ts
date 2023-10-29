@@ -181,7 +181,7 @@ export const Coin = styled.div`
     }
     #coin div {
         position: absolute;
-        -webkit-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden !important;
         bottom: 157px;
     }
     .side-a {
@@ -190,7 +190,7 @@ export const Coin = styled.div`
     }
     .side-b {
         -webkit-transform: rotateY(-180deg);
-        right: -84px;
+        right: -200px;
     }
 
     #coin.heads {
