@@ -1,1 +1,1 @@
-export const BASEURL = "http://0.0.0.0:8080/";
+export const BASEURL = "https://bets-production.up.railway.app/";
