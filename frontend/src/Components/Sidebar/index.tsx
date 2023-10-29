@@ -13,7 +13,7 @@ const Sidebar: React.FC = () => {
     return (
         <Container>
             <div className="logo">
-                <img src="/public/Bets.png"></img>
+                <img src="/Bets.png"></img>
             </div>
             <div className="tabs">
                 <div

@@ -83,7 +83,7 @@ const BasicTable: React.FC<DataType> = ({ data }) => {
                                         className="tr coin_side"
                                     >
                                         <img
-                                            src={`public/${row.bet}.png`}
+                                            src={`/${row.bet}.png`}
                                             alt="bet"
                                             width="20px"
                                             height="20px"
@@ -94,7 +94,7 @@ const BasicTable: React.FC<DataType> = ({ data }) => {
                                         className="tr coin_side"
                                     >
                                         <img
-                                            src={`public/${row.result}.png`}
+                                            src={`/${row.result}.png`}
                                             alt="bet"
                                             width="20px"
                                             height="20px"
