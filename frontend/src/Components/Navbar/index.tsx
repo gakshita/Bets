@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
     const { tokens, refill_tokens, set_tokens } = useTokens();
 
     const getHeading = () => {
+        if (location.pathname == "/") return "Coin Flip";
         const heading = location.pathname.slice(1).split("-");
         return `${heading[0]} ${heading[1]}`;
     };

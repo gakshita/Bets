@@ -13,7 +13,7 @@ const Sidebar: React.FC = () => {
     return (
         <Container>
             <div className="logo">
-                <img src="./public/Bets.png"></img>
+                <img src="/public/Bets.png"></img>
             </div>
             <div className="tabs">
                 <div
@@ -27,7 +27,8 @@ const Sidebar: React.FC = () => {
                 </div>
                 <div
                     className={`tab ${
-                        loc.pathname == "/coin-flip" && "selected"
+                        loc.pathname == "/coin-flip" ||
+                        (loc.pathname == "/" && "selected")
                     }`}
                     onClick={() => navigate("coin-flip")}
                 >

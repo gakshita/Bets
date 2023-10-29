@@ -23,7 +23,7 @@ const DEFAULT_TOKENS = 1000;
 const initial_state: StateType = {
     tokens: localStorage.getItem("tokens")
         ? JSON.parse(localStorage.getItem("tokens")!)
-        : 1000000,
+        : 1000,
     user_id: ""
 };
 
